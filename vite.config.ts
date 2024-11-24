@@ -36,6 +36,7 @@ export default defineConfig({
             },
             registerType: 'autoUpdate',
             workbox: {
+                maximumFileSizeToCacheInBytes: 20 * 1024 ** 2, // 20 MB
                 runtimeCaching: [
                     {
                         // Cache all resources in the 'zygis' folder
