@@ -1,0 +1,7 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 0px);
+    font-family: ProximaNova, sans-serif;
+}
