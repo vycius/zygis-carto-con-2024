@@ -41,7 +41,7 @@ export default defineConfig({
                     {
                         // Cache all resources in the 'zygis' folder
                         urlPattern: /\/zygis\/.*/,
-                        handler: 'CacheFirst',
+                        handler: 'NetworkFirst',
                         options: {
                             cacheName: 'zygis-cache',
                             expiration: {
