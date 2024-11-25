@@ -55,6 +55,17 @@ export default defineConfig({
                         }
                     },
                     {
+                        urlPattern: /.*\.(?:png|ico|svg)/,
+                        handler: 'CacheFirst',
+                        options: {
+                            cacheName: 'images',
+                            expiration: {
+                                maxEntries: 50,
+                                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+                            },
+                        },
+                    },
+                    {
                         // Cache sprite JSON and PNG files
                         urlPattern: /https:\/\/basemap\.startupgov\.lt\/vector\/sprite\/.*\.(json|png)$/,
                         handler: 'CacheFirst',
