@@ -6,22 +6,33 @@
     let protocol = new pmtiles.Protocol();
     maplibregl.addProtocol('pmtiles', protocol.tile);
 
-    const url = "/zygis/vilnius.pmtiles";
+    const urls = [
+        "/zygis/vilnius.pmtiles",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Regular/0-255.pbf",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Regular/256-511.pbf",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Regular/8192-8447.pbf",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Bold/0-255.pbf",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Bold/256-511.pbf",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Italic/0-255.pbf",
+        "https://basemap.startupgov.lt/vector/font/Noto%20Sans%20Italic/256-511.pbf",
+    ];
 
     async function fetchData() {
-        try {
+        const fetchPromises = urls.map(async (url) => {
             const response = await fetch(url);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-            alert("Data fetched successfully!");
-            console.log("Data retrieved:", response.ok);
+        });
+
+        try {
+            await Promise.all(fetchPromises);
+            alert("Data has been fetched for offline usage");
         } catch (error) {
             console.error("Fetch error:", error);
             alert("Failed to fetch data. Check the console for details.");
         }
     }
-
 </script>
 
 <main>
