@@ -43,7 +43,7 @@
             hash
             style="/zygis/style.json">
         <Control class="flex">
-            <button on:click={fetchData}>Fetch Data</button>
+            <button on:click={fetchData}>Fetch offline data</button>
         </Control>
     </MapLibre>
 </main>
