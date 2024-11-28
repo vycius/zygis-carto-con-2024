@@ -1,7 +1,10 @@
 # Žygis
 
-An offline representation of the 100 km trail around Vilnius, originally created for the CartoCon 2024 presentation, **"
-PMTiles: A New GIS Data Format"**.
+An offline map of the 100 km trail around Vilnius, developed for the CartoCon 2024 presentation, 
+**"PMTiles: A New GIS Data Format"**. This project demonstrates the power of PMTiles for efficient geospatial data
+handling.
+
+📖 [Explore the presentation](https://github.com/vycius/zygis-carto-con-2024/blob/main/presentation/24-11-29-PMTiles-naujas-GIS-duomen%C5%B3-formatas.pdf).
 
 ## Getting Started
 
