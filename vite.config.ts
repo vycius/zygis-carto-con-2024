@@ -67,7 +67,7 @@ export default defineConfig({
                     },
                     {
                         // Cache sprite JSON and PNG files
-                        urlPattern: /https:\/\/basemap\.startupgov\.lt\/vector\/sprite\/.*\.(json|png)$/,
+                        urlPattern: /https:\/\/basemap\.biip\.lt\/vector\/sprite\/.*\.(json|png)$/,
                         handler: 'CacheFirst',
                         options: {
                             cacheName: 'sprite-cache',
@@ -82,7 +82,7 @@ export default defineConfig({
                     },
                     {
                         // Cache font PBF files
-                        urlPattern: /https:\/\/basemap\.startupgov\.lt\/vector\/font\/.*\/\d+-\d+\.pbf$/,
+                        urlPattern: /https:\/\/basemap\.biip\.lt\/vector\/font\/.*\/\d+-\d+\.pbf$/,
                         handler: 'CacheFirst',
                         options: {
                             cacheName: 'font-cache',

@@ -37,7 +37,7 @@ To extract the basemap relevant to the trail using PMTiles:
 2. Run the following command:
 
 ```shell
-pmtiles extract https://cdn.startupgov.lt/tiles/vector/pmtiles/lithuania.pmtiles vilnius.pmtiles --bbox=25.17,54.62,25.4,54.81
+pmtiles extract https://cdn.biip.lt/tiles/vector/pmtiles/lithuania.pmtiles vilnius.pmtiles --bbox=25.17,54.62,25.4,54.81
 ```
 
 **Output Example:**
