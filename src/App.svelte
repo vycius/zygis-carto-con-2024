@@ -8,13 +8,13 @@
 
     const urls = [
         "/zygis/vilnius.pmtiles",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Regular/0-255.pbf",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Regular/256-511.pbf",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Regular/8192-8447.pbf",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Bold/0-255.pbf",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Bold/256-511.pbf",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Italic/0-255.pbf",
-        "https://basemap.biip.lt/vector/font/Noto%20Sans%20Italic/256-511.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Regular/0-255.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Regular/256-511.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Regular/8192-8447.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Bold/0-255.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Bold/256-511.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Italic/0-255.pbf",
+        "https://basemap.biip.lt/font/Noto%20Sans%20Italic/256-511.pbf",
     ];
 
     async function fetchData() {

@@ -19,8 +19,8 @@
       "data": "/zygis/takas.geojson"
     }
   },
-  "glyphs": "https://basemap.biip.lt/vector/font/{fontstack}/{range}.pbf",
-  "sprite": "https://basemap.biip.lt/vector/sprite/bright",
+  "glyphs": "https://basemap.biip.lt/font/{fontstack}/{range}.pbf",
+  "sprite": "https://basemap.biip.lt/sprite/bright",
   "layers": [
     {
       "id": "background",
